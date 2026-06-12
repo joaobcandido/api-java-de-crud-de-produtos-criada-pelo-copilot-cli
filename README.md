@@ -23,5 +23,21 @@ mvn test
 
 Docker:
 
+Construção e execução com Docker:
+
 docker build -t products-api .
 docker run -p 8080:8080 products-api
+
+Docker Compose:
+
+Subir serviço (build e executar):
+docker-compose up --build
+
+Executar em background (detached):
+docker-compose up -d --build
+
+Parar e remover containers:
+docker-compose down
+
+Teste rápido (PowerShell):
+Invoke-RestMethod http://localhost:8080/products
